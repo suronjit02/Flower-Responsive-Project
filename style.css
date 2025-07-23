@@ -22,12 +22,29 @@
     color: #8987A1;
 }
 
+.light-black {
+    color: #111111;
+}
+
 .black-blue {
     color: #252432;
 }
 
 .orange-color {
     color: #E95A08;
+}
+
+.common-button {
+    background-color: #E95A08;
+    font-size: 1em;
+    color: white;
+    padding: 1em 4.8em;
+    display: inline-block;
+    border: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* for all section */
@@ -41,7 +58,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     margin: 0 10%;
-    margin-bottom: 13em;
+    margin-bottom: 15em;
 
 }
 
@@ -71,11 +88,10 @@ nav ul li a {
 
 .banner {
     display: flex;
-    gap: 10em;
     justify-content: space-between;
     align-items: flex-end;
     margin: 0 auto;
-    max-width: 90%;
+    max-width: 80%;
 }
 
 .banner-heading {
@@ -95,6 +111,53 @@ nav ul li a {
     width: 50%;
 }
 
+/* Plants Section */
+
+.our-plant {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.our-plant-heading {
+    font-size: 2.5em;
+    margin: .5em auto;
+    margin-top: 2em;
+
+
+}
+
+.our-plant-intro {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
+
+.plants {
+    margin-bottom: 2em;
+    width: 100%;
+}
+
+.plants img {
+    width: 100%;
+}
+
+.plant-name {
+    font-weight: 500;
+    font-size: 1.3em;
+    margin: .5em auto;
+}
+
+.plant-price {
+    font-size: 1.3em;
+    margin-top: 0;
+    margin-bottom: 1.2em;
+}
+
+.plant-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3em;
+}
 
 /* media query for responsive design */
 
@@ -129,5 +192,18 @@ nav ul li a {
     .banner div {
         width: 100%;
     }
+
+    /* Plants Section */
+    .plant-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+    }
+
+    .common-button {
+        padding: 1em 2em;
+    }
+
+
 
 }
