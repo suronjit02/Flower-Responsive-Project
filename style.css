@@ -1,0 +1,79 @@
+/* google fonts */
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.noto-serif-font {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* shared style */
+.bold {
+    font-weight: bold;
+}
+
+.gray-color {
+    color: #8987A1;
+}
+
+.black-blue {
+    color: #252432;
+}
+
+/* Navbar style */
+
+nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em auto;
+}
+
+nav img {
+    width: 7em;
+}
+
+nav ul {
+    display: flex;
+    gap: 2.5em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+}
+
+
+/* media query for responsive design */
+
+@media screen and (max-width: 767px) {
+
+    nav {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1em auto;
+    }
+
+    nav ul>li {
+        display: none;
+
+    }
+
+}
