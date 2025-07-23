@@ -26,14 +26,28 @@
     color: #252432;
 }
 
+.orange-color {
+    color: #E95A08;
+}
+
+/* Body style */
+body {
+    padding: 0 10%;
+}
+
+/* for all section */
+/* section{
+    margin-top: 5em;
+} */
+
 /* Navbar style */
 
 nav {
-    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 2em auto;
+    margin-bottom: 13em;
 }
 
 nav img {
@@ -58,11 +72,30 @@ nav ul li a {
     font-size: 1.2em;
 }
 
+/* Banner style */
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banner-heading {
+    font-size: 4em;
+}
+
+.banner-description {
+    font-size: 1.2em;
+}
+
+
 
 /* media query for responsive design */
 
 @media screen and (max-width: 767px) {
 
+    /* navbar */
     nav {
         width: 90%;
         display: flex;
@@ -73,7 +106,15 @@ nav ul li a {
 
     nav ul>li {
         display: none;
+    }
 
+    /* banner */
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    .banner-heading {
+        font-size: 2em;
     }
 
 }
