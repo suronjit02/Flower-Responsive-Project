@@ -52,6 +52,9 @@ a {
 section {
     margin-top: 5em;
 }
+body{
+    margin: 1em 0;
+}
 
 /* Navbar style */
 nav {
@@ -163,12 +166,15 @@ nav ul li a {
     width: 80%;
     margin: 10em auto;
 }
-.plant-lover-description{
+
+.plant-lover-description {
     width: 50%;
 }
-.store-img{
+
+.store-img {
     width: 100%;
 }
+
 .first-div {
     position: relative;
 
@@ -190,7 +196,86 @@ nav ul li a {
 .plant-lover-section ul li {
     margin-bottom: 1.5em;
     font-size: 1.3em;
+
 }
+
+/* latest-deal-section */
+.latest-deal-section {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.latest-deal-tittle {
+    font-size: 3em;
+    margin-bottom: 0;
+}
+
+.latest-deal-description {
+    font-size: 1.2em;
+    padding: 0 10em;
+    margin-bottom: 4em;
+}
+
+.deal-1 {
+    background-image: url('assets/deal-bloom.png');
+}
+
+.deal-2 {
+    background-image: url('assets/deal-ana.png');
+}
+
+.deal-3 {
+    background-image: url('assets/deal-zabo.png');
+}
+
+.deals {
+    width: 40%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.deal-container {
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+
+/* join section */
+.join-section {
+    width: 100%;
+    height: 33em;
+    background-image: url('assets/news-letter-bg.png');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    align-content: center;
+}
+
+.join-section-tittle {
+    font-size: 3em;
+    color: white;
+}
+
+.input-div {
+    display: flex;
+    margin: 0 25%;
+}
+
+.email-input {
+    width: 100%;
+    font-size: 1em;
+    padding: 1em 2em;
+    border: none;
+}
+
+.subscribe-btn {
+    width: 35%;
+}
+
 
 /* media query for responsive design */
 
@@ -241,17 +326,35 @@ nav ul li a {
         gap: 0;
         width: 92%;
     }
+
     .store-img {
         width: 100%;
     }
+
     .badge {
         display: none;
     }
+
     .plant-lover-tittle {
         font-size: 2em;
     }
-    .plant-lover-description{
+
+    .plant-lover-description {
         width: 100%;
     }
+
+        /* join section */
+        .join-section {
+            height: 20em;
+        }
+        .join-section-tittle {
+            font-size: 2em;
+        }
+        .input-div {
+            margin: 0 10%;
+        }
+        .subscribe-btn {
+            width: 40%;
+        }
 
 }
