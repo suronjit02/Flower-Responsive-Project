@@ -223,6 +223,7 @@ nav ul li a {
 .deals-card {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 1.5em;
     margin: 3em auto;
 
@@ -231,7 +232,7 @@ nav ul li a {
 .two-card-div {
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 1.5em;
     position: relative;
     height: 100%;
 }
