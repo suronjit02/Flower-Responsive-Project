@@ -169,7 +169,8 @@ nav ul li a {
     align-items: center;
     gap: 2em;
     width: 80%;
-    margin: 10em auto;
+    margin: 15em auto;
+    margin-bottom: 10em;
 }
 
 .plant-lover-description {
@@ -213,6 +214,7 @@ nav ul li a {
 
 .latest-deal-tittle {
     font-size: 3em;
+    margin-bottom: 0;
 }
 
 .latest-deal-description {
@@ -225,7 +227,8 @@ nav ul li a {
     justify-content: center;
     align-items: center;
     gap: 1.5em;
-    margin: 3em auto;
+    margin: 10em auto;
+    margin-top: 6em;
 
 }
 
@@ -411,7 +414,7 @@ footer {
         flex-direction: column;
         gap: 0;
         width: 92%;
-        margin-bottom: 5em;
+        margin: 5em auto;
     }
 
     .store-img {
@@ -453,6 +456,7 @@ footer {
     .deals-card {
         flex-direction: column;
         gap: 1em;
+        margin: 5em auto;
     }
 
     .card-tittle h3 {
