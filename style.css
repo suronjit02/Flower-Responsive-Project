@@ -411,6 +411,7 @@ footer {
         flex-direction: column;
         gap: 0;
         width: 92%;
+        margin-bottom: 5em;
     }
 
     .store-img {
@@ -434,6 +435,10 @@ footer {
         width: 92%;
         text-align: center;
         margin: 0 auto;
+    }
+
+    .two-card-div {
+        width: 100%;
     }
 
     .latest-deal-tittle {
