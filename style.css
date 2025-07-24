@@ -38,7 +38,8 @@
     background-color: #E95A08;
     font-size: 1em;
     color: white;
-    padding: 1em 4.8em;
+    padding: 1em 0;
+    width: 100%;
     display: inline-block;
     border: none;
 }
@@ -57,7 +58,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 10%;
+    width: 80%;
+    margin: 0 auto;
     margin-bottom: 15em;
 
 }
@@ -104,15 +106,14 @@ nav ul li a {
 }
 
 .banner img {
-    width: 40em;
+    width: 100%;
 }
 
 .banner div {
-    width: 50%;
+    width: 100%;
 }
 
 /* Plants Section */
-
 .our-plant {
     text-align: center;
     width: 80%;
@@ -123,8 +124,6 @@ nav ul li a {
     font-size: 2.5em;
     margin: .5em auto;
     margin-top: 2em;
-
-
 }
 
 .our-plant-intro {
@@ -133,7 +132,6 @@ nav ul li a {
 }
 
 .plants {
-    margin-bottom: 2em;
     width: 100%;
 }
 
@@ -144,19 +142,54 @@ nav ul li a {
 .plant-name {
     font-weight: 500;
     font-size: 1.3em;
-    margin: .5em auto;
 }
 
 .plant-price {
     font-size: 1.3em;
-    margin-top: 0;
-    margin-bottom: 1.2em;
 }
 
 .plant-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 3em;
+}
+
+/* Plants Lover Section */
+.plant-lover-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    width: 80%;
+    margin: 10em auto;
+}
+.plant-lover-description{
+    width: 50%;
+}
+.store-img{
+    width: 100%;
+}
+.first-div {
+    position: relative;
+
+}
+
+.badge {
+    width: 60%;
+    position: absolute;
+    top: -22%;
+    right: -22%;
+}
+
+.plant-lover-tittle {
+    font-size: 3.5em;
+    padding-left: .5em;
+    margin-bottom: .5em;
+}
+
+.plant-lover-section ul li {
+    margin-bottom: 1.5em;
+    font-size: 1.3em;
 }
 
 /* media query for responsive design */
@@ -176,9 +209,7 @@ nav ul li a {
     /* banner */
     .banner {
         flex-direction: column-reverse;
-        gap: 1em;
-        margin: 0 auto;
-        max-width: 90%;
+        max-width: 92%;
     }
 
     .banner-heading {
@@ -200,10 +231,27 @@ nav ul li a {
         gap: 1em;
     }
 
-    .common-button {
-        padding: 1em 2em;
+    .our-plant {
+        width: 92%;
     }
 
-
+    /* Plants Lover Section */
+    .plant-lover-section {
+        flex-direction: column;
+        gap: 0;
+        width: 92%;
+    }
+    .store-img {
+        width: 100%;
+    }
+    .badge {
+        display: none;
+    }
+    .plant-lover-tittle {
+        font-size: 2em;
+    }
+    .plant-lover-description{
+        width: 100%;
+    }
 
 }
